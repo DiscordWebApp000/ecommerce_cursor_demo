@@ -106,9 +106,12 @@ export default function CollectionsPage() {
                 <div className="relative h-full flex flex-col items-center justify-center text-white p-6">
                   <h3 className="text-2xl font-bold mb-2">{category}</h3>
                   <p className="text-center text-gray-200 mb-4">Explore our {category.toLowerCase()} collection</p>
-                  <button className="px-6 py-2 bg-white text-blue-600 rounded-full transform group-hover:scale-105 transition-transform duration-300">
+                  <Link 
+                    href={`/products?category=${category.toLowerCase()}`}
+                    className="px-6 py-2 bg-white text-blue-600 rounded-full transform group-hover:scale-105 transition-transform duration-300"
+                  >
                     Shop Now
-                  </button>
+                  </Link>
                 </div>
               </div>
             ))}

@@ -3,8 +3,7 @@ import { getProductById } from '@/data/products'
 import { ProductDetails } from '../../../components/ProductDetails'
 
 export default function ProductDetailPage({ params }: { params: { id: string } }) {
-  const resolvedParams = React.use(Promise.resolve(params))
-  const product = getProductById(resolvedParams.id)
+  const product = getProductById(params.id)
 
   if (!product) {
     return (

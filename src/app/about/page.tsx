@@ -102,7 +102,7 @@ export default function AboutPage() {
               <h2 className="text-3xl font-bold">Our Journey</h2>
               <p className="text-gray-600 dark:text-gray-300">
                 Started in a small workshop with a passion for creating the perfect sweatshirt, 
-                we've grown into a brand that represents quality, comfort, and style. Our commitment 
+                we&apos;ve grown into a brand that represents quality, comfort, and style. Our commitment 
                 to sustainable practices and premium materials has earned us the trust of customers worldwide.
               </p>
               <p className="text-gray-600 dark:text-gray-300">
