@@ -21,7 +21,7 @@ export default function Hero() {
       setCurrentSlide((prev) => (prev + 1) % slideImages.length)
     }, 5000)
     return () => clearInterval(timer)
-  }, [])
+  }, [slideImages.length])
 
   return (
     <section className="relative h-screen overflow-hidden">

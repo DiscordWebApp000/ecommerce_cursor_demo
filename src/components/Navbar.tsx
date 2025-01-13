@@ -46,7 +46,7 @@ export default function Navbar() {
           <div className="flex items-center space-x-6">
             <select
               value={language}
-              onChange={(e) => setLanguage(e.target.value as any)}
+              onChange={(e) => setLanguage(e.target.value as 'en' | 'tr' | 'ru')}
               className="bg-transparent text-gray-700 dark:text-gray-200 border border-gray-300 dark:border-gray-700 rounded-lg px-3 py-1.5 text-sm focus:ring-2 focus:ring-blue-500 focus:border-transparent outline-none transition-all duration-300"
             >
               <option value="en" className="bg-white dark:bg-gray-800">EN</option>

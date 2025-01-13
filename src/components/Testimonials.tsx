@@ -40,7 +40,7 @@ export default function Testimonials() {
               <div className="relative p-8">
                 {/* Quote icon */}
                 <div className="absolute top-4 right-4 text-4xl opacity-10 group-hover:opacity-20 transition-opacity duration-300">
-                  "
+                  &quot;
                 </div>
 
                 {/* Author image */}
@@ -64,7 +64,7 @@ export default function Testimonials() {
 
                 {/* Quote */}
                 <p className="text-gray-600 dark:text-gray-300 italic mb-6 relative">
-                  "{testimonial.quote}"
+                  &quot;{testimonial.quote}&quot;
                 </p>
 
                 {/* Author info */}
