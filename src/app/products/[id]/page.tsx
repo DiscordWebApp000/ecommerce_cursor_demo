@@ -2,7 +2,14 @@ import React from 'react'
 import { getProductById } from '@/data/products'
 import { ProductDetails } from '../../../components/ProductDetails'
 
-export default function ProductDetailPage({ params }: { params: { id: string } }) {
+interface PageProps {
+  params: {
+    id: string
+  }
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export default function ProductDetailPage({ params }: PageProps) {
   const product = getProductById(params.id)
 
   if (!product) {

@@ -3,7 +3,14 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { getCollectionById } from '@/data/products'
 
-export default function CollectionDetailPage({ params }: { params: { id: string } }) {
+interface PageProps {
+  params: {
+    id: string
+  }
+  searchParams: { [key: string]: string | string[] | undefined }
+}
+
+export default function CollectionDetailPage({ params }: PageProps) {
   const collection = getCollectionById(params.id)
 
   if (!collection) {
