@@ -1,0 +1,96 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  /* Light theme */
+  --background: #ffffff;
+  --foreground: #1e293b;
+  --primary: #1e40af;
+  --primary-hover: #1e3a8a;
+  --secondary: #0f766e;
+  --secondary-hover: #115e59;
+  --accent: #6d28d9;
+  --accent-hover: #5b21b6;
+  --muted: #475569;
+  --surface: #f1f5f9;
+  --surface-hover: #e2e8f0;
+  --border: #cbd5e1;
+}
+
+.dark {
+  /* Dark theme */
+  --background: #213555;
+  --foreground: #F5EFE7;
+  --primary: #3E5879;
+  --primary-hover: #4a6a94;
+  --secondary: #D8C4B6;
+  --secondary-hover: #e5d5c8;
+  --accent: #F5EFE7;
+  --accent-hover: #ffffff;
+  --muted: #D8C4B6;
+  --surface: #3E5879;
+  --surface-hover: #4a6a94;
+  --border: #3E5879;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Animation keyframes */
+@keyframes slideUp {
+  from {
+    transform: translateY(20px);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Custom animation classes */
+.animate-slideUp {
+  animation: slideUp 1s forwards;
+}
+
+.animate-fadeIn {
+  animation: fadeIn 1s forwards;
+}
+
+.animation-delay-200 {
+  animation-delay: 200ms;
+}
+
+.animation-delay-400 {
+  animation-delay: 400ms;
+}
+
+.animation-delay-600 {
+  animation-delay: 600ms;
+}
+
+/* Custom utilities */
+.bg-clip-text {
+  -webkit-background-clip: text;
+  background-clip: text;
+}
